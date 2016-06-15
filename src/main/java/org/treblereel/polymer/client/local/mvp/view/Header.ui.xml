@@ -1,0 +1,26 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'
+             xmlns:m="urn:import:gwt.material.design.client.ui">
+
+    <ui:style>
+    </ui:style>
+
+
+<m:MaterialPanel>
+<m:MaterialHeader>
+    <m:MaterialNavBar backgroundColor="blue" >
+    <m:MaterialNavBrand href="#Test" position="LEFT">Title</m:MaterialNavBrand>
+    <m:MaterialNavSection position="RIGHT">
+        <m:MaterialLink  iconType="ACCOUNT_CIRCLE" iconPosition="LEFT" text="Account"  textColor="white" waves="LIGHT"/>
+        <m:MaterialLink  iconType="AUTORENEW" iconPosition="LEFT" text="Refresh" textColor="white" waves="LIGHT"/>
+        <m:MaterialLink  iconType="SEARCH" tooltip="Menu" textColor="white" waves="LIGHT"/>
+        <m:MaterialLink  iconType="MORE_VERT" tooltip="Starter" textColor="white" waves="LIGHT"/>
+    </m:MaterialNavSection>
+</m:MaterialNavBar>
+
+
+</m:MaterialHeader>
+</m:MaterialPanel>
+
+
+</ui:UiBinder>

@@ -1,0 +1,22 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'
+             xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:my="urn:import:org.treblereel.polymer.client.local.mvp.view"
+>
+
+    <ui:style>
+    </ui:style>
+
+
+    <m:MaterialPanel backgroundColor="blue" ui:field="rootPanel">
+
+
+
+        <m:MaterialPanel ui:field="headerPanel" />
+
+
+        <m:MaterialPanel ui:field="container"/>
+
+
+    </m:MaterialPanel>
+</ui:UiBinder>
