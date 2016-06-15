@@ -1,15 +1,12 @@
 package org.treblereel.polymer.client.local;
 
-import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.shared.HandlerManager;
-import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.RootPanel;
-import com.google.gwt.user.client.ui.Widget;
-import gwt.material.design.client.ui.MaterialPanel;
 import org.jboss.errai.ioc.client.api.EntryPoint;
 import org.slf4j.Logger;
 import org.treblereel.polymer.client.local.mvp.AppController;
+import org.treblereel.polymer.client.local.mvp.view.Header;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.inject.Produces;
@@ -25,6 +22,10 @@ public class App extends Composite {
     Logger logger;
 
     @Inject
+    Header header;
+
+
+    @Inject
     org.treblereel.polymer.client.local.mvp.view.RootPanel rootPanel;
 
     @Inject
@@ -32,6 +33,7 @@ public class App extends Composite {
 
     @PostConstruct
     public void init() {
+        RootPanel.get().add(header);
         RootPanel.get().add(rootPanel);
         appController.dispatch(rootPanel.getContainer());
     }

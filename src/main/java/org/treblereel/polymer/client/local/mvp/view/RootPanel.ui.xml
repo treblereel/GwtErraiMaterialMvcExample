@@ -9,14 +9,6 @@
 
 
     <m:MaterialPanel backgroundColor="blue" ui:field="rootPanel">
-
-
-
-        <m:MaterialPanel ui:field="headerPanel" />
-
-
         <m:MaterialPanel ui:field="container"/>
-
-
     </m:MaterialPanel>
 </ui:UiBinder>

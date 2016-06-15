@@ -19,14 +19,6 @@ public class RootPanel extends Composite {
     @Inject
     Logger logger;
 
-
-    @Inject
-    Header header;
-
-    @Inject
-    @UiField
-    MaterialPanel headerPanel;
-
     @Inject
     @UiField
     MaterialPanel container;
@@ -43,11 +35,7 @@ public class RootPanel extends Composite {
     @PostConstruct
     public void init(){
         logger.info("init");
-        //headerPanel.add(header.asWidget());
-        logger.info("init 2");
-
         initWidget(uiBinder.createAndBindUi(this));
-        headerPanel.add(header.asWidget());
     }
 
     public Panel getContainer(){

@@ -20,70 +20,70 @@ import javax.inject.Inject;
 @ApplicationScoped
 public class AppController implements Presenter, ValueChangeHandler<String> {
 
-  @Inject
-  Logger logger;
+    @Inject
+    Logger logger;
 
-  @Inject
-  private HandlerManager eventBus;
+    @Inject
+    private HandlerManager eventBus;
 
-  @Inject
-  private MainPresenter mainPresenter;
+    @Inject
+    private MainPresenter mainPresenter;
 
-  @Inject
-  private DancersPresenter dancersPresenter;
+    @Inject
+    private DancersPresenter dancersPresenter;
 
-  private HasWidgets container;
+    private HasWidgets container;
 
-  public void bind() {
+    public void bind() {
 
-    logger.info("bind");
+        logger.info("bind");
 
-    History.addValueChangeHandler(this);
+        History.addValueChangeHandler(this);
 
-    eventBus.addHandler(MainEvent.TYPE, event -> doMain());
+        eventBus.addHandler(MainEvent.TYPE, event -> doMain());
 
-    eventBus.addHandler(DancersEvent.TYPE, event -> doDancers());
-
-
-  }
-
-  private void doMain() {
-      logger.info("doMain");
-    History.newItem("main");
-  }
-
-  private void doDancers() {
-      logger.info("doDancers");
-
-      History.newItem("dancers");
-  }
-
-  public void dispatch(final HasWidgets container) {
-      logger.info("dispatch");
+        eventBus.addHandler(DancersEvent.TYPE, event -> doDancers());
 
 
-      this.container = container;
-    bind();
-
-    if ("".equals(History.getToken())) {
-      History.newItem("main");
-    } else {
-      History.fireCurrentHistoryState();
     }
-  }
 
-  public void onValueChange(ValueChangeEvent<String> event) {
-    String token = event.getValue();
-
-      logger.info("onValueChange "+token);
-
-
-      if (token != null) {
-      if (token.equals("main")) {
-        mainPresenter.dispatch(container);
-      } else if (token.equals("dancers")) {
-        dancersPresenter.dispatch(container);
-      }
+    private void doMain() {
+        logger.info("doMain");
+        History.newItem("main");
     }
-  }
+
+    private void doDancers() {
+        logger.info("doDancers");
+
+        History.newItem("dancers");
+    }
+
+    public void dispatch(final HasWidgets container) {
+        logger.info("dispatch");
+
+
+        this.container = container;
+        bind();
+
+        if ("".equals(History.getToken())) {
+            History.newItem("main");
+        } else {
+            History.fireCurrentHistoryState();
+        }
+    }
+
+    public void onValueChange(ValueChangeEvent<String> event) {
+        String token = event.getValue();
+
+        logger.info("onValueChange " + token);
+
+
+        if (token != null) {
+            if (token.equals("main")) {
+                mainPresenter.dispatch(container);
+            } else if (token.equals("dancers")) {
+                dancersPresenter.dispatch(container);
+            }
+        }
+    }
 }

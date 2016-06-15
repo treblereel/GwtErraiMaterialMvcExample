@@ -1,3 +1,4 @@
+src/main/webapp/WEB-INF/classes
 target/
 .errai/
 example.iml
