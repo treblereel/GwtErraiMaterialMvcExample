@@ -32,7 +32,7 @@
                         <m:MaterialLink iconType="NOTIFICATIONS" iconPosition="NONE" enabled="false"/>
                     </m:MaterialTooltip>
                     <m:MaterialTooltip text="Login" position="BOTTOM">
-                        <m:MaterialLink activates="sideNav" iconType="ACCOUNT_CIRCLE" iconPosition="NONE"/>
+                        <m:MaterialLink activates="sideNav" iconType="ACCOUNT_CIRCLE" iconPosition="NONE" ui:field="loginButton"/>
                     </m:MaterialTooltip>
                 </m:MaterialNavSection>
             </m:MaterialNavBar>
