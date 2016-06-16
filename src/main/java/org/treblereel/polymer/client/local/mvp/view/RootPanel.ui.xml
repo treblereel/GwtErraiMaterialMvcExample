@@ -5,10 +5,93 @@
 >
 
     <ui:style>
+        header, main, footer {
+            padding-left: 280px;
+        }
+
+        .label {
+            margin: 24px;
+        }
+
+        .footer {
+            position: fixed;
+            width: 100%;
+            bottom: 0px;
+            padding-top: 0px !important;
+        }
     </ui:style>
 
+    <g:HTMLPanel>
+        <header>
+            <m:MaterialPanel ui:field="headerPanel"/>
+        </header>
 
-    <m:MaterialPanel backgroundColor="blue" ui:field="rootPanel">
-        <m:MaterialPanel ui:field="container"/>
-    </m:MaterialPanel>
+        <m:MaterialContainer fontSize="0.8em" ui:field="container">
+<!--            <m:MaterialLabel text="Today" textColor="grey" addStyleNames="{style.label}"/>
+            &lt;!&ndash; Collapsible &ndash;&gt;
+            <m:MaterialCollapsible type="POPOUT" grid="s12 m6 l8">
+                <m:MaterialCollapsibleItem>
+                    <m:MaterialCollapsibleHeader>
+                        <m:MaterialLink text="Travel" iconType="AIRPLANEMODE_ACTIVE" iconPosition="LEFT" textColor="purple"/>
+                    </m:MaterialCollapsibleHeader>
+                    <m:MaterialCollapsibleBody>
+                        <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+                    </m:MaterialCollapsibleBody>
+                </m:MaterialCollapsibleItem>
+
+                <m:MaterialCollapsibleItem>
+                    <m:MaterialCollapsibleHeader>
+                        <m:MaterialLink text="Social" iconType="GROUP" iconPosition="LEFT" textColor="red"/>
+                    </m:MaterialCollapsibleHeader>
+                    <m:MaterialCollapsibleBody>
+                        <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+                    </m:MaterialCollapsibleBody>
+                </m:MaterialCollapsibleItem>
+
+                <m:MaterialCollapsibleItem>
+                    <m:MaterialCollapsibleHeader>
+                        <m:MaterialLink text="Updates" iconType="FLAG" iconPosition="LEFT" textColor="amber"/>
+                    </m:MaterialCollapsibleHeader>
+                    <m:MaterialCollapsibleBody>
+                        <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+                    </m:MaterialCollapsibleBody>
+                </m:MaterialCollapsibleItem>
+
+                <m:MaterialCollapsibleItem>
+                    <m:MaterialCollapsibleHeader>
+                        <m:MaterialLink text="Purchases" iconType="ADD_SHOPPING_CART" iconPosition="LEFT" textColor="brown"/>
+                    </m:MaterialCollapsibleHeader>
+                    <m:MaterialCollapsibleBody>
+                        <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+                    </m:MaterialCollapsibleBody>
+                </m:MaterialCollapsibleItem>
+
+                <m:MaterialCollapsibleItem>
+                    <m:MaterialCollapsibleHeader>
+                        <m:MaterialLink text="Promos" iconType="LOYALTY" iconPosition="LEFT" textColor="blue"/>
+                    </m:MaterialCollapsibleHeader>
+                    <m:MaterialCollapsibleBody>
+                        <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+                    </m:MaterialCollapsibleBody>
+                </m:MaterialCollapsibleItem>
+
+                <m:MaterialCollapsibleItem>
+                    <m:MaterialCollapsibleHeader>
+                        <m:MaterialLink text="Finance" iconType="INSERT_CHART" iconPosition="LEFT" textColor="green"/>
+                    </m:MaterialCollapsibleHeader>
+                    <m:MaterialCollapsibleBody>
+                        <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+                    </m:MaterialCollapsibleBody>
+                </m:MaterialCollapsibleItem>
+            </m:MaterialCollapsible>-->
+        </m:MaterialContainer>
+
+        <m:MaterialFooter backgroundColor="blue" type="FIXED">
+            <m:MaterialFooterCopyright>
+                <m:MaterialLabel text="© 2015 Copyright GWT Material"/>
+            </m:MaterialFooterCopyright>
+        </m:MaterialFooter>
+    </g:HTMLPanel>
+
+
 </ui:UiBinder>

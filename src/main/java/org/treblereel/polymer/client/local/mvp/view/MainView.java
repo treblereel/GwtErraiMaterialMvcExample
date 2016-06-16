@@ -29,13 +29,10 @@ public class MainView extends Composite implements MainPresenter.Display{
 
     @PostConstruct
     public void init(){
-        logger.info("init");
         initWidget(uiBinder.createAndBindUi(this));
     }
 
     public Widget asWidget() {
-        logger.info("asWidget");
-
         return this;
     }
 }

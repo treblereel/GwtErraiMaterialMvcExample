@@ -5,7 +5,7 @@
     <ui:style>
     </ui:style>
 
-    <m:MaterialPanel backgroundColor="blue">
-        <m:MaterialButton text="Dancers"/>
+    <m:MaterialPanel backgroundColor="grey">
+        <m:MaterialButton text="Hall of fame"/>
     </m:MaterialPanel>
 </ui:UiBinder>

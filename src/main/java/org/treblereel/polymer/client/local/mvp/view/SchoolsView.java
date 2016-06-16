@@ -5,22 +5,26 @@ import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.Widget;
 import org.slf4j.Logger;
-import org.treblereel.polymer.client.local.mvp.presenter.DancersPresenter;
+import org.treblereel.polymer.client.local.mvp.presenter.SchoolsPresenter;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.Dependent;
 import javax.inject.Inject;
 
+/**
+ * Created by treblereel on 6/16/16.
+ */
 @Dependent
-public class DancersView extends Composite implements DancersPresenter.Display{
+public class SchoolsView extends Composite implements SchoolsPresenter.Display {
 
     @Inject
     Logger logger;
 
-    private static DancersViewUiBinder uiBinder = GWT.create(DancersViewUiBinder.class);
+    private static SchoolsViewUiBinder uiBinder = GWT.create(SchoolsViewUiBinder.class);
 
-    interface DancersViewUiBinder extends UiBinder<Widget, DancersView> {
+    interface SchoolsViewUiBinder extends UiBinder<Widget, SchoolsView> {
     }
+
 
     @PostConstruct
     public void init(){

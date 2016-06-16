@@ -6,6 +6,7 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.Panel;
 import com.google.gwt.user.client.ui.Widget;
+import gwt.material.design.client.ui.MaterialContainer;
 import gwt.material.design.client.ui.MaterialPanel;
 import org.slf4j.Logger;
 
@@ -21,11 +22,14 @@ public class RootPanel extends Composite {
 
     @Inject
     @UiField
-    MaterialPanel container;
+    MaterialPanel headerPanel;
+
+    @Inject
+    Header header;
 
     @Inject
     @UiField
-    MaterialPanel rootPanel;
+    MaterialContainer container;
 
     private static RootPanelClientUiBinder uiBinder = GWT.create(RootPanelClientUiBinder.class);
 
@@ -34,8 +38,10 @@ public class RootPanel extends Composite {
 
     @PostConstruct
     public void init(){
-        logger.info("init");
         initWidget(uiBinder.createAndBindUi(this));
+        headerPanel.add(header);
+
+
     }
 
     public Panel getContainer(){

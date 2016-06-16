@@ -7,8 +7,11 @@ import org.slf4j.Logger;
 import javax.enterprise.context.Dependent;
 import javax.inject.Inject;
 
+/**
+ * Created by treblereel on 6/16/16.
+ */
 @Dependent
-public class MainPresenter implements Presenter{
+public class FamePresenter implements Presenter{
 
     public interface Display {
         Widget asWidget();

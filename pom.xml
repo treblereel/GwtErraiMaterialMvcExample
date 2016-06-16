@@ -194,7 +194,7 @@
 				<artifactId>gwt-maven-plugin</artifactId>
 				<version>${maven.gwt.plugin.version}</version>
 				<configuration>
-					<runTarget>index.html</runTarget>
+					<runTarget>App.html</runTarget>
 					<extraJvmArgs>${argLine} -Xmx1g -Xms756m -XX:CompileThreshold=1000</extraJvmArgs>
 					<hostedWebapp>src/main/webapp/</hostedWebapp>
 					<logLevel>INFO</logLevel>

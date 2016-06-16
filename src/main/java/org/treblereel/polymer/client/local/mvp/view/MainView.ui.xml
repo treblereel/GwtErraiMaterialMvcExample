@@ -5,9 +5,7 @@
     <ui:style>
     </ui:style>
 
-
     <m:MaterialPanel backgroundColor="green">
         <m:MaterialButton text="Main"/>
-
     </m:MaterialPanel>
 </ui:UiBinder>
