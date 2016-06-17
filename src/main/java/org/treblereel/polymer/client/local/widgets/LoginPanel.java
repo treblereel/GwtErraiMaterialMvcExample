@@ -2,19 +2,24 @@ package org.treblereel.polymer.client.local.widgets;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.dom.client.Style;
+import com.google.gwt.event.dom.client.MouseOutEvent;
+import com.google.gwt.event.dom.client.MouseOverEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.Panel;
 import com.google.gwt.user.client.ui.Widget;
 import gwt.material.design.addins.client.window.MaterialWindow;
+import gwt.material.design.client.base.mixin.ShadowMixin;
 import gwt.material.design.client.constants.*;
 import gwt.material.design.client.ui.*;
 import org.slf4j.Logger;
 import org.treblereel.polymer.client.local.mvp.view.SchoolsView;
+import org.treblereel.polymer.client.local.security.event.AuthenticationChange;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.Dependent;
+import javax.enterprise.event.Event;
 import javax.inject.Inject;
 
 /**
@@ -30,13 +35,8 @@ public class LoginPanel extends Composite {
     @Inject
     MaterialWindow window;
 
-/*
-    private static LoginPanelUiBinder uiBinder = GWT.create(LoginPanelUiBinder.class);
-
-    interface LoginPanelUiBinder extends UiBinder<Widget, LoginPanel> {
-    }
-*/
-
+    @Inject
+    private Event<AuthenticationChange> authentication;
 
     @PostConstruct
     public void init(){
@@ -60,8 +60,8 @@ public class LoginPanel extends Composite {
 
         MaterialButton button = new MaterialButton();
         button.setText("Log In");
-        button.setWaves(WavesType.GREEN);
         button.setBackgroundColor("blue");
+        button.addClickHandler(c->doLogin());
         window.add(button);
 
         MaterialRow row = new MaterialRow();
@@ -85,6 +85,8 @@ public class LoginPanel extends Composite {
         i1.setUrl("icons/social/svg/social-1_round-twitter.svg");
         i1.setType(ImageType.CIRCLE);
         i1.addClickHandler(c -> doTwitterLogin());
+        i1.addMouseOverHandler( event -> onSocialButtonMouseOverHandler(event));
+        i1.addMouseOutHandler( event -> onSocialButtonMouseOutHandler(event));
         soColumn1.add(i1);
         social.add(soColumn1);
 
@@ -93,6 +95,8 @@ public class LoginPanel extends Composite {
         i2.setUrl("icons/social/svg/social-1_round-facebook.svg");
         i2.setType(ImageType.CIRCLE);
         i2.addClickHandler(c -> doFacebookLogin());
+        i2.addMouseOverHandler( event -> onSocialButtonMouseOverHandler(event));
+        i2.addMouseOutHandler( event -> onSocialButtonMouseOutHandler(event));
         soColumn2.add(i2);
         social.add(soColumn2);
 
@@ -101,6 +105,8 @@ public class LoginPanel extends Composite {
         i3.setUrl("icons/social/svg/social-1_round-google-plus.svg");
         i3.setType(ImageType.CIRCLE);
         i3.addClickHandler(c -> doGoogleLogin());
+        i3.addMouseOverHandler( event -> onSocialButtonMouseOverHandler(event));
+        i3.addMouseOutHandler( event -> onSocialButtonMouseOutHandler(event));
         soColumn3.add(i3);
         social.add(soColumn3);
 
@@ -108,6 +114,23 @@ public class LoginPanel extends Composite {
         window.add(row);
         window.add(social);
 
+    }
+
+    private void onSocialButtonMouseOverHandler(MouseOverEvent event ) {
+        MaterialImage source = (MaterialImage)event.getSource();
+        source.setBackgroundColor("blue");
+    }
+
+    private void onSocialButtonMouseOutHandler(MouseOutEvent event) {
+        MaterialImage source = (MaterialImage)event.getSource();
+        source.setBackgroundColor("white");
+    }
+
+    private void doLogin() {
+        AuthenticationChange event = new AuthenticationChange();
+        event.setStatus(AuthenticationChange.Authentication.LOGIN);
+        authentication.fire(event);
+        window.closeWindow();
     }
 
     private void doTwitterLogin() {

@@ -26,12 +26,12 @@
     <g:HTMLPanel>
             <!-- NavBar -->
             <m:MaterialNavBar activates="sideNav" ui:field="navBar" paddingLeft="20" backgroundColor="blue">
-                <m:MaterialNavBrand text="Starter"/>
+                <m:MaterialNavBrand text="Competitions database"/>
                 <m:MaterialNavSection float="RIGHT">
                     <m:MaterialTooltip text="Events" position="BOTTOM">
                         <m:MaterialLink iconType="NOTIFICATIONS" iconPosition="NONE" enabled="false"/>
                     </m:MaterialTooltip>
-                    <m:MaterialTooltip text="Login" position="BOTTOM">
+                    <m:MaterialTooltip text="Login" position="BOTTOM" ui:field="loginToolTip">
                         <m:MaterialLink activates="sideNav" iconType="ACCOUNT_CIRCLE" iconPosition="NONE" ui:field="loginButton"/>
                     </m:MaterialTooltip>
                 </m:MaterialNavSection>
@@ -44,14 +44,12 @@
                     <m:MaterialLink text="gwt-material@gmail.com" activates="dropProfile" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" textColor="white"/>
                 </ma:sideprofile.MaterialSideProfile>
 
-                <m:MaterialLink text="Home" textColor="blue" href="#main" iconType="WHATSHOT" separator="true"/>
-                <m:MaterialLink text="Dancers" textColor="blue" href="#dancers" iconType="VIEW_MODULE"/>
-                <m:MaterialLink text="Schools" textColor="blue" href="#schools" iconType="NOTIFICATIONS" separator="true"/>
-                <m:MaterialLink text="Championships" textColor="blue" href="#championships" iconType="NAVIGATION" separator="true"/>
-                <m:MaterialLink text="Hall of fame" textColor="blue" href="#fame" iconType="FAVORITE" separator="true"/>
+                <m:MaterialLink text="Home" textColor="blue" href="#main" iconType="WHATSHOT" separator="true" ui:field="main" enabled="true"/>
+                <m:MaterialLink text="Dancers" textColor="blue" href="#dancers" iconType="VIEW_MODULE" ui:field="dancers" enabled="false"/>
+                <m:MaterialLink text="Schools" textColor="blue" href="#schools" iconType="NOTIFICATIONS" separator="true" ui:field="schools" enabled="false"/>
+                <m:MaterialLink text="Championships" textColor="blue" href="#championships" iconType="NAVIGATION" separator="true" ui:field="championships" enabled="false"/>
+                <m:MaterialLink text="Hall of fame" textColor="blue" href="#fame" iconType="FAVORITE" separator="true" ui:field="fame" enabled="false"/>
             </m:MaterialSideNav>
-
-
 
     </g:HTMLPanel>
 </ui:UiBinder>
