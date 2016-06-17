@@ -5,6 +5,7 @@ import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.Panel;
 import com.google.gwt.user.client.ui.Widget;
+import gwt.material.design.client.ui.MaterialRow;
 import org.slf4j.Logger;
 import org.treblereel.polymer.client.local.mvp.presenter.MainPresenter;
 
@@ -30,6 +31,8 @@ public class MainView extends Composite implements MainPresenter.Display{
     @PostConstruct
     public void init(){
         initWidget(uiBinder.createAndBindUi(this));
+
+        MaterialRow row;
     }
 
     public Widget asWidget() {

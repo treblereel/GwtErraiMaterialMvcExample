@@ -1,20 +1,12 @@
 package org.treblereel.polymer.client.local.widgets;
 
-import com.google.gwt.core.client.GWT;
-import com.google.gwt.dom.client.Style;
 import com.google.gwt.event.dom.client.MouseOutEvent;
 import com.google.gwt.event.dom.client.MouseOverEvent;
-import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.user.client.ui.Composite;
-import com.google.gwt.user.client.ui.Label;
-import com.google.gwt.user.client.ui.Panel;
-import com.google.gwt.user.client.ui.Widget;
 import gwt.material.design.addins.client.window.MaterialWindow;
-import gwt.material.design.client.base.mixin.ShadowMixin;
 import gwt.material.design.client.constants.*;
 import gwt.material.design.client.ui.*;
 import org.slf4j.Logger;
-import org.treblereel.polymer.client.local.mvp.view.SchoolsView;
 import org.treblereel.polymer.client.local.security.event.AuthenticationChange;
 
 import javax.annotation.PostConstruct;
@@ -28,7 +20,6 @@ import javax.inject.Inject;
 @Dependent
 public class LoginPanel extends Composite {
 
-
     @Inject
     Logger logger;
 
@@ -40,8 +31,6 @@ public class LoginPanel extends Composite {
 
     @PostConstruct
     public void init(){
-        //initWidget(uiBinder.createAndBindUi(this));
-
         window.setWidth("40%");
         MaterialLabel label = new MaterialLabel();
         label.setText("Login with credintals ...");
@@ -110,7 +99,6 @@ public class LoginPanel extends Composite {
         soColumn3.add(i3);
         social.add(soColumn3);
 
-
         window.add(row);
         window.add(social);
 
@@ -147,7 +135,6 @@ public class LoginPanel extends Composite {
     }
 
     public MaterialWindow getWindow() {
-        //window.add(this);
         return window;
     }
 }

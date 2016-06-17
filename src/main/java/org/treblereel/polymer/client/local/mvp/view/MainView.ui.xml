@@ -5,7 +5,13 @@
     <ui:style>
     </ui:style>
 
-    <m:MaterialPanel backgroundColor="green">
-        <m:MaterialButton text="Main"/>
-    </m:MaterialPanel>
+
+        <m:MaterialRow>
+            <m:MaterialColumn>
+                <m:MaterialTitle fontSize="2.7em" backgroundColor="white" title="To get access to database login first" description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi"/>
+            </m:MaterialColumn>
+            <m:MaterialColumn>
+                <m:MaterialTitle fontSize="2.7em" backgroundColor="white" title="To get access to database login first" description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi"/>
+            </m:MaterialColumn>
+        </m:MaterialRow>
 </ui:UiBinder>
