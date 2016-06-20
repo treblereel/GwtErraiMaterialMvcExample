@@ -1,3 +1,8 @@
+deployments/
+.settings/
+.openshift/
+src/main/webapp/app/
+src/main/gwt-unitCache/
 src/main/webapp/WEB-INF/lib/
 src/main/webapp/WEB-INF/classes
 target/
@@ -5,3 +10,8 @@ target/
 example.iml
 .idea/
 .DS_Store
+target
+.settings/*
+!.settings/.jsdtscope
+.project
+.classpath
