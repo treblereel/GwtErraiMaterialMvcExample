@@ -122,16 +122,16 @@ public class LoginPanel extends Composite {
     }
 
     private void doTwitterLogin() {
-        logger.info("let's do twitter login");
+        logger.debug("let's do twitter login");
 
     }
 
     private void doGoogleLogin() {
-        logger.info("let's do facebook login");
+        logger.debug("let's do facebook login");
     }
 
     private void doFacebookLogin() {
-        logger.info("let's do facebook login");
+        logger.debug("let's do facebook login");
     }
 
     public MaterialWindow getWindow() {

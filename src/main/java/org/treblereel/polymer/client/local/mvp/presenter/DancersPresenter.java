@@ -24,7 +24,6 @@ public class DancersPresenter implements Presenter {
 
     @Override
     public void dispatch(HasWidgets container) {
-        logger.info("dispatch");
         container.clear();
         container.add(display.asWidget());
     }

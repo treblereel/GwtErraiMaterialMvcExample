@@ -101,12 +101,12 @@ public class Header extends Composite {
             authentication.fire(event);
         } else {
             loginPanel.getWindow().openWindow();
-            logger.info("loginButton");
+            logger.debug("loginButton");
         }
     }
 
     public void onAuthenticationChange(@Observes AuthenticationChange authenticationChange) {
-        logger.info("onAuthenticationChange " + authenticationChange.getStatus());
+        logger.debug("onAuthenticationChange " + authenticationChange.getStatus());
         if (authenticationChange.getStatus().equals(AuthenticationChange.Authentication.LOGIN)) {
             onLogin();
         } else if (authenticationChange.getStatus().equals(AuthenticationChange.Authentication.LOGOUT)) {
