@@ -3,6 +3,7 @@ package org.treblereel.polymer.client.local.mvp.view;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.dom.client.Style;
 import com.google.gwt.event.dom.client.ClickEvent;
+import com.google.gwt.event.shared.HandlerManager;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
@@ -16,6 +17,7 @@ import gwt.material.design.client.ui.MaterialLink;
 import gwt.material.design.client.ui.MaterialPanel;
 import gwt.material.design.client.ui.MaterialTooltip;
 import org.slf4j.Logger;
+import org.treblereel.polymer.client.local.mvp.event.MainEvent;
 import org.treblereel.polymer.client.local.security.event.AuthenticationChange;
 import org.treblereel.polymer.client.local.widgets.LoginPanel;
 
@@ -32,6 +34,9 @@ import java.util.List;
  */
 @Dependent
 public class Header extends Composite {
+	
+	@Inject
+    private HandlerManager eventBus;
 
     private List<MaterialLink> links = new ArrayList<>();
 
@@ -120,6 +125,7 @@ public class Header extends Composite {
         loginToolTip.setText("Login");
         loginButton.setIconType(IconType.ACCOUNT_CIRCLE);
         changeLinksVisibility(false);
+        eventBus.fireEvent(new MainEvent());
     }
 
     private void changeLinksVisibility(Boolean state){
