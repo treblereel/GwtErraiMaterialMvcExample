@@ -9,7 +9,7 @@
     <source path='shared'/>
 
     <inherits name="gwt.material.design.GwtMaterialBasicWithJQuery" />
-    <inherits name="gwt.material.design.themes.GwtMaterialThemePurple" />
+    <inherits name="gwt.material.design.themes.ThemePurple" />
     <inherits name="org.jboss.errai.enterprise.All" />
     <inherits name="gwt.material.design.addins.GwtMaterialAddins"/>
 

@@ -27,7 +27,7 @@
 
         <m:MaterialContainer fontSize="0.8em" ui:field="container" />
 
-        <m:MaterialFooter backgroundColor="blue" type="FIXED">
+        <m:MaterialFooter backgroundColor="BLUE" type="FIXED">
             <m:MaterialFooterCopyright>
                 <m:MaterialLabel text="© 2016 Copyright @treblereel"/>
             </m:MaterialFooterCopyright>

@@ -49,7 +49,7 @@ public class LoginPanel extends Composite {
 
         MaterialButton button = new MaterialButton();
         button.setText("Log In");
-        button.setBackgroundColor("blue");
+        button.setBackgroundColor(Color.BLUE);
         button.addClickHandler(c->doLogin());
         window.add(button);
 
@@ -106,19 +106,19 @@ public class LoginPanel extends Composite {
 
     private void onSocialButtonMouseOverHandler(MouseOverEvent event ) {
         MaterialImage source = (MaterialImage)event.getSource();
-        source.setBackgroundColor("blue");
+        source.setBackgroundColor(Color.ORANGE);
     }
 
     private void onSocialButtonMouseOutHandler(MouseOutEvent event) {
         MaterialImage source = (MaterialImage)event.getSource();
-        source.setBackgroundColor("white");
+        source.setBackgroundColor(Color.AMBER);
     }
 
     private void doLogin() {
         AuthenticationChange event = new AuthenticationChange();
         event.setStatus(AuthenticationChange.Authentication.LOGIN);
         authentication.fire(event);
-        window.closeWindow();
+        window.close();
     }
 
     private void doTwitterLogin() {

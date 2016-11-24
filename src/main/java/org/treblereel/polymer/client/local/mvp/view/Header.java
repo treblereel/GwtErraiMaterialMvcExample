@@ -100,7 +100,7 @@ public class Header extends Composite {
             event.setStatus(AuthenticationChange.Authentication.LOGOUT);
             authentication.fire(event);
         } else {
-            loginPanel.getWindow().openWindow();
+            loginPanel.getWindow().open();
             logger.debug("loginButton");
         }
     }

@@ -1,11 +1,295 @@
 <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
-             xmlns:g='urn:import:com.google.gwt.user.client.ui'
              xmlns:m="urn:import:gwt.material.design.client.ui">
 
     <ui:style>
     </ui:style>
 
-    <m:MaterialPanel backgroundColor="blue">
+    <m:MaterialPanel backgroundColor="BLUE">
         <m:MaterialButton text="Dancers"/>
+
+
+        <m:MaterialContainer fontSize="0.8em">
+            <m:MaterialLabel text="Today" textColor="GREY"/>
+            <!-- Collapsible -->
+            <m:MaterialCollapsible type="POPOUT" grid="s12 m6 l8">
+                <m:MaterialCollapsibleItem>
+                    <m:MaterialCollapsibleHeader>
+                        <m:MaterialLink text="Social" iconType="GROUP" iconPosition="LEFT" textColor="RED"/>
+                    </m:MaterialCollapsibleHeader>
+                    <m:MaterialCollapsibleBody>
+                        <m:MaterialLabel
+                                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+                    </m:MaterialCollapsibleBody>
+                </m:MaterialCollapsibleItem>
+
+                <m:MaterialCollapsibleItem>
+                    <m:MaterialCollapsibleHeader>
+                        <m:MaterialLink text="Updates" iconType="FLAG" iconPosition="LEFT" textColor="AMBER"/>
+                    </m:MaterialCollapsibleHeader>
+                    <m:MaterialCollapsibleBody>
+                        <m:MaterialLabel
+                                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+                    </m:MaterialCollapsibleBody>
+                </m:MaterialCollapsibleItem>
+
+                <m:MaterialCollapsibleItem>
+                    <m:MaterialCollapsibleHeader>
+                        <m:MaterialLink text="Purchases" iconType="ADD_SHOPPING_CART" iconPosition="LEFT"
+                                        textColor="BROWN"/>
+                    </m:MaterialCollapsibleHeader>
+                    <m:MaterialCollapsibleBody>
+                        <m:MaterialLabel
+                                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+                    </m:MaterialCollapsibleBody>
+                </m:MaterialCollapsibleItem>
+
+                <m:MaterialCollapsibleItem>
+                    <m:MaterialCollapsibleHeader>
+                        <m:MaterialLink text="Promos" iconType="LOYALTY" iconPosition="LEFT" textColor="BLUE"/>
+                    </m:MaterialCollapsibleHeader>
+                    <m:MaterialCollapsibleBody>
+                        <m:MaterialLabel
+                                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+                    </m:MaterialCollapsibleBody>
+                </m:MaterialCollapsibleItem>
+
+
+                <m:MaterialCollapsibleItem>
+                    <m:MaterialCollapsibleHeader>
+                        <m:MaterialLink text="Promos" iconType="LOYALTY" iconPosition="LEFT" textColor="BLUE"/>
+                    </m:MaterialCollapsibleHeader>
+                    <m:MaterialCollapsibleBody>
+                        <m:MaterialLabel
+                                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+                    </m:MaterialCollapsibleBody>
+                </m:MaterialCollapsibleItem>
+                <m:MaterialCollapsibleItem>
+                    <m:MaterialCollapsibleHeader>
+                        <m:MaterialLink text="Promos" iconType="LOYALTY" iconPosition="LEFT" textColor="BLUE"/>
+                    </m:MaterialCollapsibleHeader>
+                    <m:MaterialCollapsibleBody>
+                        <m:MaterialLabel
+                                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+                    </m:MaterialCollapsibleBody>
+                </m:MaterialCollapsibleItem>
+                <m:MaterialCollapsibleItem>
+                    <m:MaterialCollapsibleHeader>
+                        <m:MaterialLink text="Promos" iconType="LOYALTY" iconPosition="LEFT" textColor="BLUE"/>
+                    </m:MaterialCollapsibleHeader>
+                    <m:MaterialCollapsibleBody>
+                        <m:MaterialLabel
+                                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+                    </m:MaterialCollapsibleBody>
+                </m:MaterialCollapsibleItem>
+                <m:MaterialCollapsibleItem>
+                    <m:MaterialCollapsibleHeader>
+                        <m:MaterialLink text="Promos" iconType="LOYALTY" iconPosition="LEFT" textColor="BLUE"/>
+                    </m:MaterialCollapsibleHeader>
+                    <m:MaterialCollapsibleBody>
+                        <m:MaterialLabel
+                                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+                    </m:MaterialCollapsibleBody>
+                </m:MaterialCollapsibleItem>
+                <m:MaterialCollapsibleItem>
+                    <m:MaterialCollapsibleHeader>
+                        <m:MaterialLink text="Promos" iconType="LOYALTY" iconPosition="LEFT" textColor="BLUE"/>
+                    </m:MaterialCollapsibleHeader>
+                    <m:MaterialCollapsibleBody>
+                        <m:MaterialLabel
+                                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+                    </m:MaterialCollapsibleBody>
+                </m:MaterialCollapsibleItem>
+                <m:MaterialCollapsibleItem>
+                    <m:MaterialCollapsibleHeader>
+                        <m:MaterialLink text="Promos" iconType="LOYALTY" iconPosition="LEFT" textColor="BLUE"/>
+                    </m:MaterialCollapsibleHeader>
+                    <m:MaterialCollapsibleBody>
+                        <m:MaterialLabel
+                                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+                    </m:MaterialCollapsibleBody>
+                </m:MaterialCollapsibleItem>
+                <m:MaterialCollapsibleItem>
+                    <m:MaterialCollapsibleHeader>
+                        <m:MaterialLink text="Promos" iconType="LOYALTY" iconPosition="LEFT" textColor="BLUE"/>
+                    </m:MaterialCollapsibleHeader>
+                    <m:MaterialCollapsibleBody>
+                        <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+                    </m:MaterialCollapsibleBody>
+                </m:MaterialCollapsibleItem>
+                <m:MaterialCollapsibleItem>
+                    <m:MaterialCollapsibleHeader>
+                        <m:MaterialLink text="Promos" iconType="LOYALTY" iconPosition="LEFT" textColor="BLUE"/>
+                    </m:MaterialCollapsibleHeader>
+                    <m:MaterialCollapsibleBody>
+                        <m:MaterialLabel
+                                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+                    </m:MaterialCollapsibleBody>
+                </m:MaterialCollapsibleItem>
+                <m:MaterialCollapsibleItem>
+                    <m:MaterialCollapsibleHeader>
+                        <m:MaterialLink text="Promos" iconType="LOYALTY" iconPosition="LEFT" textColor="BLUE"/>
+                    </m:MaterialCollapsibleHeader>
+                    <m:MaterialCollapsibleBody>
+                        <m:MaterialLabel
+                                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+                    </m:MaterialCollapsibleBody>
+                </m:MaterialCollapsibleItem>
+                <m:MaterialCollapsibleItem>
+                    <m:MaterialCollapsibleHeader>
+                        <m:MaterialLink text="Promos" iconType="LOYALTY" iconPosition="LEFT" textColor="BLUE"/>
+                    </m:MaterialCollapsibleHeader>
+                    <m:MaterialCollapsibleBody>
+                        <m:MaterialLabel
+                                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+                    </m:MaterialCollapsibleBody>
+                </m:MaterialCollapsibleItem>
+                <m:MaterialCollapsibleItem>
+                    <m:MaterialCollapsibleHeader>
+                        <m:MaterialLink text="Promos" iconType="LOYALTY" iconPosition="LEFT" textColor="BLUE"/>
+                    </m:MaterialCollapsibleHeader>
+                    <m:MaterialCollapsibleBody>
+                        <m:MaterialLabel
+                                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+                    </m:MaterialCollapsibleBody>
+                </m:MaterialCollapsibleItem>
+                <m:MaterialCollapsibleItem>
+                    <m:MaterialCollapsibleHeader>
+                        <m:MaterialLink text="Promos" iconType="LOYALTY" iconPosition="LEFT" textColor="BLUE"/>
+                    </m:MaterialCollapsibleHeader>
+                    <m:MaterialCollapsibleBody>
+                        <m:MaterialLabel
+                                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+                    </m:MaterialCollapsibleBody>
+                </m:MaterialCollapsibleItem>
+                <m:MaterialCollapsibleItem>
+                    <m:MaterialCollapsibleHeader>
+                        <m:MaterialLink text="Promos" iconType="LOYALTY" iconPosition="LEFT" textColor="BLUE"/>
+                    </m:MaterialCollapsibleHeader>
+                    <m:MaterialCollapsibleBody>
+                        <m:MaterialLabel
+                                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+                    </m:MaterialCollapsibleBody>
+                </m:MaterialCollapsibleItem>
+                <m:MaterialCollapsibleItem>
+                    <m:MaterialCollapsibleHeader>
+                        <m:MaterialLink text="Promos" iconType="LOYALTY" iconPosition="LEFT" textColor="BLUE"/>
+                    </m:MaterialCollapsibleHeader>
+                    <m:MaterialCollapsibleBody>
+                        <m:MaterialLabel
+                                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+                    </m:MaterialCollapsibleBody>
+                </m:MaterialCollapsibleItem>
+                <m:MaterialCollapsibleItem>
+                    <m:MaterialCollapsibleHeader>
+                        <m:MaterialLink text="Promos" iconType="LOYALTY" iconPosition="LEFT" textColor="BLUE"/>
+                    </m:MaterialCollapsibleHeader>
+                    <m:MaterialCollapsibleBody>
+                        <m:MaterialLabel
+                                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+                    </m:MaterialCollapsibleBody>
+                </m:MaterialCollapsibleItem>
+                <m:MaterialCollapsibleItem>
+                    <m:MaterialCollapsibleHeader>
+                        <m:MaterialLink text="Promos" iconType="LOYALTY" iconPosition="LEFT" textColor="BLUE"/>
+                    </m:MaterialCollapsibleHeader>
+                    <m:MaterialCollapsibleBody>
+                        <m:MaterialLabel
+                                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+                    </m:MaterialCollapsibleBody>
+                </m:MaterialCollapsibleItem>
+                <m:MaterialCollapsibleItem>
+                    <m:MaterialCollapsibleHeader>
+                        <m:MaterialLink text="Promos" iconType="LOYALTY" iconPosition="LEFT" textColor="BLUE"/>
+                    </m:MaterialCollapsibleHeader>
+                    <m:MaterialCollapsibleBody>
+                        <m:MaterialLabel
+                                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+                    </m:MaterialCollapsibleBody>
+                </m:MaterialCollapsibleItem>
+                <m:MaterialCollapsibleItem>
+                    <m:MaterialCollapsibleHeader>
+                        <m:MaterialLink text="Promos" iconType="LOYALTY" iconPosition="LEFT" textColor="BLUE"/>
+                    </m:MaterialCollapsibleHeader>
+                    <m:MaterialCollapsibleBody>
+                        <m:MaterialLabel
+                                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+                    </m:MaterialCollapsibleBody>
+                </m:MaterialCollapsibleItem>
+                <m:MaterialCollapsibleItem>
+                    <m:MaterialCollapsibleHeader>
+                        <m:MaterialLink text="Promos" iconType="LOYALTY" iconPosition="LEFT" textColor="BLUE"/>
+                    </m:MaterialCollapsibleHeader>
+                    <m:MaterialCollapsibleBody>
+                        <m:MaterialLabel
+                                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+                    </m:MaterialCollapsibleBody>
+                </m:MaterialCollapsibleItem>
+                <m:MaterialCollapsibleItem>
+                    <m:MaterialCollapsibleHeader>
+                        <m:MaterialLink text="Promos" iconType="LOYALTY" iconPosition="LEFT" textColor="BLUE"/>
+                    </m:MaterialCollapsibleHeader>
+                    <m:MaterialCollapsibleBody>
+                        <m:MaterialLabel
+                                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+                    </m:MaterialCollapsibleBody>
+                </m:MaterialCollapsibleItem>
+                <m:MaterialCollapsibleItem>
+                    <m:MaterialCollapsibleHeader>
+                        <m:MaterialLink text="Promos" iconType="LOYALTY" iconPosition="LEFT" textColor="BLUE"/>
+                    </m:MaterialCollapsibleHeader>
+                    <m:MaterialCollapsibleBody>
+                        <m:MaterialLabel
+                                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+                    </m:MaterialCollapsibleBody>
+                </m:MaterialCollapsibleItem>
+                <m:MaterialCollapsibleItem>
+                    <m:MaterialCollapsibleHeader>
+                        <m:MaterialLink text="Promos" iconType="LOYALTY" iconPosition="LEFT" textColor="BLUE"/>
+                    </m:MaterialCollapsibleHeader>
+                    <m:MaterialCollapsibleBody>
+                        <m:MaterialLabel
+                                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+                    </m:MaterialCollapsibleBody>
+                </m:MaterialCollapsibleItem>
+                <m:MaterialCollapsibleItem>
+                    <m:MaterialCollapsibleHeader>
+                        <m:MaterialLink text="Promos" iconType="LOYALTY" iconPosition="LEFT" textColor="BLUE"/>
+                    </m:MaterialCollapsibleHeader>
+                    <m:MaterialCollapsibleBody>
+                        <m:MaterialLabel
+                                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+                    </m:MaterialCollapsibleBody>
+                </m:MaterialCollapsibleItem>
+                <m:MaterialCollapsibleItem>
+                    <m:MaterialCollapsibleHeader>
+                        <m:MaterialLink text="Promos" iconType="LOYALTY" iconPosition="LEFT" textColor="BLUE"/>
+                    </m:MaterialCollapsibleHeader>
+                    <m:MaterialCollapsibleBody>
+                        <m:MaterialLabel
+                                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+                    </m:MaterialCollapsibleBody>
+                </m:MaterialCollapsibleItem>
+                <m:MaterialCollapsibleItem>
+                    <m:MaterialCollapsibleHeader>
+                        <m:MaterialLink text="Promos" iconType="LOYALTY" iconPosition="LEFT" textColor="BLUE"/>
+                    </m:MaterialCollapsibleHeader>
+                    <m:MaterialCollapsibleBody>
+                        <m:MaterialLabel
+                                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+                    </m:MaterialCollapsibleBody>
+                </m:MaterialCollapsibleItem>
+                <m:MaterialCollapsibleItem>
+                    <m:MaterialCollapsibleHeader>
+                        <m:MaterialLink text="Promos" iconType="LOYALTY" iconPosition="LEFT" textColor="BLUE"/>
+                    </m:MaterialCollapsibleHeader>
+                    <m:MaterialCollapsibleBody>
+                        <m:MaterialLabel
+                                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+                    </m:MaterialCollapsibleBody>
+                </m:MaterialCollapsibleItem>
+            </m:MaterialCollapsible>
+        </m:MaterialContainer>
+
+
     </m:MaterialPanel>
 </ui:UiBinder>

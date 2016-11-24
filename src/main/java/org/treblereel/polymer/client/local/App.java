@@ -3,6 +3,7 @@ package org.treblereel.polymer.client.local;
 import com.google.gwt.event.shared.HandlerManager;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.RootPanel;
+import org.jboss.errai.ioc.client.api.AfterInitialization;
 import org.jboss.errai.ioc.client.api.EntryPoint;
 import org.treblereel.polymer.client.local.mvp.AppController;
 
@@ -24,6 +25,10 @@ public class App extends Composite {
     @PostConstruct
     public void init() {
         RootPanel.get().add(rootPanel);
+    }
+
+    @AfterInitialization
+    public void onReady(){
         appController.dispatch(rootPanel.getContainer());
     }
 
